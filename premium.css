@@ -1,0 +1,250 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-y: auto;
+    min-height: 100vh;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+}
+p{
+    color: #8f8f8f;
+}
+.navbar-light {
+    background-color: #536162;
+}
+
+nav ul li {
+    padding: 0 10px 0 10px;
+}
+.footer {
+    width: 100%;
+    bottom: 0;
+    padding: 1rem 0;
+    background-color: rgb(205, 202, 202);
+}
+
+.footer-heart {
+    text-align: center;
+    font-family: open sans, sans-serif;
+}
+
+.footer-heart a {
+    border-bottom: 0.3px solid #55506b;
+    color: #170969;
+    padding-bottom: .25em;
+    text-decoration: none;
+}
+
+.footer-heart a:hover {
+    color: #cb2929;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='1.5' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 18%;
+    border-bottom: 0;
+    padding-bottom: .3em;
+    text-decoration: none;
+}
+
+.emoji {
+    vertical-align: middle;
+}
+.nav-item {
+    font-size: 1.1rem;
+}
+
+#brand {
+    position: relative;
+    height: 2.7rem;
+    width: 2.7rem;
+}
+
+#navbarItems li a {
+    color: rgb(0, 0, 0);
+    font-weight: 580;
+    font-size: 1.3rem;
+}
+
+#name {
+    font-size: x-large;
+    font-weight: 650;
+    color: black;
+}
+
+.box-container .box h6 {
+    padding-left: 2rem;
+}
+
+#emoji {
+    vertical-align: baseline;
+    height: 1.7rem;
+    width: 1.7rem;
+}
+
+.navbar-nav .nav-item a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-item a::before,
+.navbar-nav .nav-item a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(243, 242, 242);
+    transform: scaleX(0);
+    transition: transform .25s;
+}
+
+.navbar-nav .nav-item a::before {
+    top: -3px;
+    transform-origin: left;
+}
+
+.navbar-nav .nav-item a::after {
+    bottom: -3px;
+    transform-origin: right;
+}
+
+.navbar-nav .nav-item a:hover::after,
+.navbar-nav .nav-item a:hover::before {
+    transform: scaleX(1);
+}.nav-item {
+        font-size: 1.1rem;
+    }
+    
+    #brand {
+        position: relative;
+        height: 2.7rem;
+        width: 2.7rem;
+    }
+    
+    #navbarItems li a {
+        color: rgb(0, 0, 0);
+        font-weight: 580;
+        font-size: 1.3rem;
+    }
+    
+    #name {
+        font-size: x-large;
+        font-weight: 650;
+        color: black;
+    }
+    
+    .box-container .box h6 {
+        padding-left: 2rem;
+    }
+    
+    #emoji {
+        vertical-align: baseline;
+        height: 1.7rem;
+        width: 1.7rem;
+    }
+    
+    .navbar-nav .nav-item a {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+    }
+    
+    .navbar-nav .nav-item a::before,
+    .navbar-nav .nav-item a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: rgb(243, 242, 242);
+        transform: scaleX(0);
+        transition: transform .25s;
+    }
+    
+    .navbar-nav .nav-item a::before {
+        top: -3px;
+        transform-origin: left;
+    }
+    
+    .navbar-nav .nav-item a::after {
+        bottom: -3px;
+        transform-origin: right;
+    }
+    
+    .navbar-nav .nav-item a:hover::after,
+    .navbar-nav .nav-item a:hover::before {
+        transform: scaleX(1);
+    }
+/* pricing section */
+#pricing {
+    padding: 50px;
+}
+.price-text {
+    font-size: 3rem;
+    line-height: 1.5rem;
+}
+.pricing-column{
+    padding: 3% 2%;
+}
+.section-heading{
+    size: 3rem;
+    line-height: 1.5;
+    text-align: center;
+}
+/* buttons */
+.btn{
+    width: 50%;
+   justify-content: center;  
+   align-items: center;
+   margin-left: 60px;
+  }
+/* pricing section */
+#pricing{
+    margin: 0 auto;
+}
+.pricing-column{
+    padding: 3% 2%;
+    min-height: 75px;
+}
+.card-img-top{
+    width: 100%;
+    height: 200px;
+}
+.card{
+    width: 100%;
+    min-height: 75px;
+}
+.row{
+    position: relative;
+    min-height: 75px;
+}
+
+@media screen and (max-width: 992px) {
+    .card{
+        width: 100%;
+    }
+    .card-img-top {
+            height: 200px;
+        }
+    .pricing-column{
+            padding: 3% 2%;
+    }
+     .btn{
+           width: 50%;
+           justify-content: center;  
+           align-items: center;
+           margin-left: 70px;
+          }
+}

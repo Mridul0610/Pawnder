@@ -1,0 +1,482 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-y: auto;
+    min-height: 100vh;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+}
+
+.navbar-light {
+    background-color: #536162;
+}
+
+nav ul li {
+    padding: 0 10px 0 10px;
+}
+
+
+/*---Footer---*/
+
+.footer {
+    width: 100%;
+    bottom: 0;
+    padding: 1rem 0;
+    background-color: rgb(205, 202, 202);
+}
+
+.footer-heart {
+    text-align: center;
+    font-family: open sans, sans-serif;
+}
+
+.footer-heart a {
+    border-bottom: 0.3px solid #55506b;
+    color: #170969;
+    padding-bottom: .25em;
+    text-decoration: none;
+}
+
+.footer-heart a:hover {
+    color: #cb2929;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='1.5' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 18%;
+    border-bottom: 0;
+    padding-bottom: .3em;
+    text-decoration: none;
+}
+
+.emoji {
+    vertical-align: middle;
+}
+.emojiz {
+    vertical-align: middle;
+    
+}
+
+.nav-item {
+    font-size: 1.1rem;
+}
+
+#brand {
+    position: relative;
+    height: 2.7rem;
+    width: 2.7rem;
+}
+
+#navbarItems li a {
+    color:black;
+    font-weight: 580;
+    font-size: 1.3rem;
+}
+
+#name {
+    font-size: x-large;
+    font-weight: 650;
+    color: black;
+}
+
+.box-container .box h6 {
+    padding-left: 2rem;
+}
+
+#emoji {
+    vertical-align: baseline;
+    height: 1.7rem;
+    width: 1.7rem;
+}
+
+#emojii {
+    vertical-align: center;
+    height: 1.7rem;
+    width: 1.7rem;
+}
+
+.navbar-nav .nav-item a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-item a::before,
+.navbar-nav .nav-item a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(243, 242, 242);
+    transform: scaleX(0);
+    transition: transform .25s;
+}
+
+.navbar-nav .nav-item a::before {
+    top: -3px;
+    transform-origin: left;
+}
+
+.navbar-nav .nav-item a::after {
+    bottom: -3px;
+    transform-origin: right;
+}
+
+.navbar-nav .nav-item a:hover::after,
+.navbar-nav .nav-item a:hover::before {
+    transform: scaleX(1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+
+.open-button {
+    background-color: rgb(102, 101, 101);
+    color: white;
+    padding: 20px 20px;
+    border: 2px solid black;
+    cursor: pointer;
+    opacity: 0.8;
+    position: absolute;
+    top: 8rem;
+    right: 2rem;
+    width: 19rem;
+    height: 65px;
+    font-size: 25px;
+    padding: 2px 2px 2px 2px;
+}
+
+
+/* The popup chat - hidden by default */
+
+.chat-popup {
+ 
+    display: none;
+    position: absolute;
+    border: 1px solid #111010;
+    bottom: 200px;
+    right: 40px;
+    float: right; 
+}
+
+
+/* Add styles to the form container */
+
+.form-container {
+    max-width: 380px;
+    padding: 10px 50px;
+    background-color: white;
+    float: right;
+}
+
+
+/* Full-width textarea */
+
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #d1dce2;
+    resize: none;
+    min-height: 75px;
+}
+
+
+/* When the textarea gets focus, do something */
+
+.form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* Set a style for the submit/send button */
+
+.form-container .btn {
+    background-color: #8ca6ab;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+
+/* Add a red background color to the cancel button */
+
+.form-container .cancel {
+    background-color: #8ca6ab;
+}
+
+/* Add some hover effects to buttons */
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+.badge {
+    background-color: red;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#emojiis {
+    vertical-align: middle;
+    font-size: 1rem;
+}
+
+/*heart button*/
+.container{
+    position: absolute;
+    left:39%;
+    top:-8%;
+    transform: translate(-50%,100%);
+}
+.container i{
+    font-size: 2.5rem;
+    transition: .4s;
+}
+.container:hover i{
+    color:#e73b77;
+}
+.fas{
+    color: #e73b77;
+    transition: .4s;
+}
+
+.containerA{
+    position: absolute;
+    left:30%;
+    top:-8%;
+    transform: translate(-50%,100%);
+}
+.containerA i{
+    font-size: 2.5rem;
+    transition: .4s;
+}
+.containerA:hover i{
+    color:#e73b77;
+}
+
+.containerB{
+    position: absolute;
+    left:30%;
+    top:-8%;
+    transform: translate(-50%,100%);
+}
+.containerB i{
+    font-size: 2.5rem;
+    transition: .4s;
+}
+.containerB:hover i{
+    color:#e73b77;
+}
+
+
+.containerC{
+    position: absolute;
+    left:50%;
+    top:-8%;
+    transform: translate(-50%,100%);
+}
+.containerC i{
+    font-size: 2.5rem;
+    transition: .4s;
+}
+.containerC:hover i{
+    color:#e73b77;
+}
+
+
+.containerD{
+    position: absolute;
+    left:35%;
+    top:-8%;
+    transform: translate(-50%,100%);
+}
+.containerD i{
+    font-size: 2.5rem;
+    transition: .4s;
+}
+.containerD:hover i{
+    color:#e73b77;
+}
+
+
+.containerE{
+    position: absolute;
+    left:29%;
+    top:-8%;
+    transform: translate(-50%,100%);
+}
+.containerE i{
+    font-size: 2.5rem;
+    transition: .4s;
+}
+.containerE:hover i{
+    color:#e73b77;
+}
+
+.containerF{
+    position: absolute;
+    left:20%;
+    top:-8%;
+    transform: translate(-50%,100%);
+}
+.containerF i{
+    font-size: 2.5rem;
+    transition: .4s;
+}
+.containerF:hover i{
+    color:#e73b77;
+}
+
+
+.containerG{
+    position: absolute;
+    left:43%;
+    top:-8%;
+    transform: translate(-50%,100%);
+}
+.containerG i{
+    font-size: 2.5rem;
+    transition: .4s;
+}
+.containerG:hover i{
+    color:#e73b77;
+}
+
+
+.containerH{
+    position: absolute;
+    left:44%;
+    top:-8%;
+    transform: translate(-50%,100%);
+}
+.containerH i{
+    font-size: 2.5rem;
+    transition: .4s;
+}
+.containerH:hover i{
+    color:#e73b77;
+}
+
+
+.containerI{
+    position: absolute;
+    left:71%;
+    top:-8%;
+    transform: translate(-50%,100%);
+}
+.containerI i{
+    font-size: 2.5rem;
+    transition: .4s;
+}
+.containerI:hover i{
+    color:#e73b77;
+}
+
+@media screen and (max-width: 992px) {
+    .chat-popup{
+        top: 12rem;
+        right:8px;
+        max-width: 16rem;
+        max-height: auto;
+    }
+
+    .open-button{
+        max-width: 120px;
+        max-height: 50px;
+        top: 35rem;
+        right:16.5rem;
+    }
+
+    .form-container .btn {
+        width: 6.3rem;
+        height: 4rem;
+        margin-bottom: 10px;
+        opacity: 0.8;
+        margin: 4.5px;
+    }
+
+    .form-container {
+        max-width: 270px;
+    }
+    
+    .footer{
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+.card_image{
+    width: 100%;
+    height: 480px;
+}
+
+.card_image img{
+    object-fit: cover;
+    width: 100%;
+    height: 480px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    height: 50px;
+    width: 50px;
+    background-size: 100%, 100%;
+    background-image: none;
+}
+
+.carousel-control-next:after {
+    content: '>';
+    font-size: 70px;
+    color: rgb(56, 2, 78);
+}
+
+.carousel-control-prev:after {
+    content: '<';
+    font-size: 70px;
+    color: rgb(56, 2, 78);
+}
+
+@media (min-width: 540px) {
+    html {
+        font-size: 20px;
+    }
+
+    .brand,
+    .container:nth-child(2) p {
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 960px) {
+    .container {
+        width: 700px;
+    }
+}

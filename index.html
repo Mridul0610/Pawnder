@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To PAWnder</title>
+
+    <!----css---->
+    <link rel="stylesheet" href="index.css">
+
+    <!----Bootstrap---->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!---FontAwsome--->
+    <script src="https://kit.fontawesome.com/0e54d351b7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!----Navbar---->
+    <header>
+        <nav class="navbar navbar-light navbar-expand-lg p-3">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <a href="#" class="navbar-brand"><img class="emoji" alt="my img"
+                            src="https://clipart.world/wp-content/uploads/2020/11/Two-Paw-Print-clipart-transparent.png"
+                            id="brand"><span id="name">PAWnder</span>
+                    </a>
+                </a>
+                <button class="navbar-toggler" ; type="button" ; data-bs-toggle="collapse" ;
+                    data-bs-target="#navbarItems">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse justify-content-end" id="navbarItems">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="../premium/premium.html" aria-current="page"><img class="emojiz" alt="my img"
+                                    src="https://dejpknyizje2n.cloudfront.net/svgcustom/clipart/preview/crown-with-two-dots-on-tips-sticker-6881-19773-550x550.png"
+                                    id="emoji">Premium
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <hr>
+
+    <!----carousel---->
+    <div class="col-12 col-sm-4 col-md-6 col-lg-8">
+        <div id="carousel-0" class="carousel slide pointer-event" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <div class="card_image">
+                        <img src="https://dogtime.com/assets/uploads/gallery/pit-bull-dog-breed-pictures/pit-bull-dog-breed-picture-1.jpg"
+                            class="d-block" alt="... ">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Pitbull</h5>
+                        <p>Age: 8 month</p><span class="badge">Protective</span>&nbsp;<span
+                            class="badge">Playful</span>&nbsp;<span class="badge">Caring</span><br>
+                        <div class="containerA"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <div class="card_image">
+                        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F34%2F2022%2F03%2F22%2Fhappy-labrador-retriever-getty-0322-2000.jpg&q=60"
+                            class="d-block" alt="..."></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Labrador</h5>
+                        <p>Age: 1 year</p><span class="badge">Playful</span>&nbsp;<span
+                            class="badge">Sleeping</span>&nbsp;<span class="badge">Swimming</span><br>
+                        <div class="container"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card_image">
+                        <img src="https://media-be.chewy.com/wp-content/uploads/2021/06/01091720/Siberian-Husky_FeaturedImage-1024x615.jpg"
+                            class="d-block" alt="..."></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Husky</h5>
+                        <p>Age: 1 year</p><span class="badge">Playing</span>&nbsp;<span
+                            class="badge">Sleeping</span>&nbsp;<span class="badge">Chasing birds</span><br>
+                        <div class="containerE"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://vetstreet.brightspotcdn.com/dims4/default/21dc2d6/2147483647/thumbnail/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F9f%2F9b%2F6ff000df4e4d8e8c70608cf6e0f5%2Fgolden-retriever-ap-0johoo-645.jpg
+                        " class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Retriever</h5>
+                        <p>Age: 1 year</p><span class="badge">Affectionate</span>&nbsp;<span
+                            class="badge">Lovey-Dovey</span>&nbsp;<span class="badge">Playful</span><br>
+                        <div class="container"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://image.petmd.com/files/2022-06/golden-retriever.jpg " class="d-block"
+                            alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Retriever</h5>
+                        <p>Age: 1 year</p><span class="badge">Even-tempered</span>&nbsp;<span
+                            class="badge">Intelligent</span>&nbsp;<span class="badge">Affectionate</span><br>
+                        <div class="container"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://i.guim.co.uk/img/media/177f871940f3dabc5eb4b80020ec40a75648da99/0_176_4737_2840/master/4737.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=70ce3f9b09875c33fa130593919d74ce "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Labrador</h5>
+                        <p>Age: 2 months</p><span class="badge">Playing ball</span>&nbsp;<span
+                            class="badge">Pool</span>&nbsp;<span class="badge">Playful</span><br>
+                        <div class="container"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://images.squarespace-cdn.com/content/v1/54e7a1a6e4b08db9da801ded/fdecc7f0-42bf-4696-bd4c-73a868e5d1d2/81.jpg "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Retriever</h5>
+                        <p>Age: 2.5 months</p><span class="badge">Gentle</span>&nbsp;<span
+                            class="badge">Fluffy</span>&nbsp;<span class="badge">Cuddles</span><br>
+                        <div class="container"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card_image">
+                        <img src="https://static.nationalgeographic.co.uk/files/styles/image_3200/public/01-chocolate-lab-nationalgeographic_1154144.jpg?w=1600&h=900"
+                            class="d-block" alt="..."></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Labrador</h5>
+                        <p>Age: 1.5 years</p><span class="badge">Powerful</span>&nbsp;<span
+                            class="badge">Protective</span>&nbsp;<span class="badge">Loyal</span><br>
+                        <div class="container"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://vetstreet.brightspotcdn.com/dims4/default/ed2a774/2147483647/crop/0x0%2B0%2B0/resize/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F26%2Fbd22c0a10611e087a80050568d634f%2Ffile%2FLabrador-2-645mk062111.jpg "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Labrador</h5>
+                        <p>Age: 1 year</p><span class="badge">Chasing birds</span>&nbsp;<span
+                            class="badge">Cuddles</span>&nbsp;<span class="badge">Playful</span><br>
+                        <div class="container"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://scx2.b-cdn.net/gfx/news/hires/2022/golden-retriever.jpg " class="d-block"
+                            alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Retriever</h5>
+                        <p>Age: 1 year</p><span class="badge">Gentle</span>&nbsp;<span
+                            class="badge">Cuddles</span>&nbsp;<span class="badge">Playful</span><br>
+                        <div class="container"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://cdn.britannica.com/84/232784-050-1769B477/Siberian-Husky-dog.jpg "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Husky</h5>
+                        <p>Age: 1 year</p><span class="badge">Free-spirited</span>&nbsp;<span
+                            class="badge">Athletic</span>&nbsp;<span class="badge">Playful</span><br>
+                        <div class="containerE"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://www.k9ofmine.com/wp-content/uploads/2018/01/types-of-chihuahuas-1150x700.jpg "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Chihuahua</h5>
+                        <p>Age: 7 month</p><span class="badge">Small</span>&nbsp;<span
+                            class="badge">Loving</span>&nbsp;<span class="badge">Companion</span><br>
+                        <div class="containerH"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://images.wagwalkingweb.com/media/daily_wag/blog_articles/hero/1634854499.6392796/top-stubborn-dog-breeds-siberian-husky.jpg "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Husky</h5>
+                        <p>Age: 5 months</p><span class="badge">Cuddles</span>&nbsp;<span
+                            class="badge">Fluffy</span>&nbsp;<span class="badge">Playful</span><br>
+                        <div class="containerE"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="http://cdn.shopify.com/s/files/1/1382/2223/articles/dog1_0fe8fd5d-09bf-444b-b39b-9fb1757577a0_1024x1024.png?v=1614623029 "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Chihuahua</h5>
+                        <p>Age: 9 month</p><span class="badge">Love being outdoors</span>&nbsp;<span
+                            class="badge">Explorer</span>&nbsp;<span class="badge">Cuteness overloaded</span><br>
+                        <div class="containerH"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://www.marvelousdogs.com/wp-content/uploads/2021/06/White-Husky.jpg "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Husky</h5>
+                        <p>Age: 7 months</p><span class="badge">Loyal</span>&nbsp;<span
+                            class="badge">Dramatic</span>&nbsp;<span class="badge">Protective</span><br>
+                        <div class="containerE"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Mops_oct09_cropped2.jpg "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Pug</h5>
+                        <p>Age: 1 year</p><span class="badge">Playful</span>&nbsp;<span
+                            class="badge">Gentle</span>&nbsp;<span class="badge">Loving</span><br>
+                        <div class="containerF"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://www.anythinggermanshepherd.com/wp-content/uploads/2020/04/how-to-stop-german-shepherd-puppy-from-biting.jpg "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>German Shepherd</h5>
+                        <p>Age: 4 month</p><span class="badge">Protective</span>&nbsp;<span
+                            class="badge">Partner</span>&nbsp;<span class="badge">Loving</span><br>
+                        <div class="containerI"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://cdn.britannica.com/44/233244-050-A65D4571/Chihuahua-dog.jpg " class="d-block"
+                            alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Chihuahua</h5>
+                        <p>Age: 7 month</p><span class="badge">Playful</span>&nbsp;<span class="badge">Runs
+                            along</span>&nbsp;<span class="badge">Loves candy</span><br>
+                        <div class="containerH"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://images.wagwalkingweb.com/media/daily_wag/blog_articles/hero/1634855272.7075307/top-15-dog-breeds-for-small-apartments-pug.jpg "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Pug</h5>
+                        <p>Age: 9 month</p><span class="badge">Candy lover</span>&nbsp;<span
+                            class="badge">Gentle</span>&nbsp;<span class="badge">Biscuit lover</span><br>
+                        <div class="containerF"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://cdn.britannica.com/35/233235-050-8DED07E3/Pug-dog.jpg " class="d-block"
+                            alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Pug</h5>
+                        <p>Age: 9 month</p><span class="badge">Sleeps in bed</span>&nbsp;<span
+                            class="badge">Hugs</span>&nbsp;<span class="badge">Cuddles</span><br>
+                        <div class="containerF"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://vetstreet.brightspotcdn.com/dims4/default/e5338c0/2147483647/crop/0x0%2B0%2B0/resize/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F97%2F4851d09ea011e0a2380050568d634f%2Ffile%2FChihuahua-Smooth-Coat-4-645mk062111.jpg "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Chihuahua</h5>
+                        <p>Age: 8 months</p><span class="badge">A bit of anger</span>&nbsp;<span
+                            class="badge">Loving</span>&nbsp;<span class="badge">Sweet</span><br>
+                        <div class="containerH"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://www.purina.com.au/-/media/project/purina/main/breeds/puppies/puppy-chocolate-labrador.jpg "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Labrador</h5>
+                        <p>Age: 4 months</p><span class="badge">Loyal</span>&nbsp;<span
+                            class="badge">Protective</span>&nbsp;<span class="badge">Cute</span><br>
+                        <div class="container"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://www.purina.com.au/-/media/project/purina/main/breeds/puppies/puppy-golden-retriever.jpg "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Retriever</h5>
+                        <p>Age: 5 month</p><span class="badge">Cuddles</span>&nbsp;<span
+                            class="badge">Fluffy</span>&nbsp;<span class="badge">Calm</span><br>
+                        <div class="container"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://cdn-fastly.petguide.com/media/2022/02/16/8243752/pug.jpg?size=720x845&nocrop=1 "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Pug</h5>
+                        <p>Age: 1 month</p><span class="badge">Playful</span>&nbsp;<span
+                            class="badge">Gentle</span>&nbsp;<span class="badge">Calm</span><br>
+                        <div class="containerF"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://i0.wp.com/www.vortexmag.net/wp-content/uploads/2017/12/JMbN5hW.jpg?fit=1800%2C1200&amp;ssl=1 "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Rottweiler</h5>
+                        <p>Age: 2 month</p><span class="badge">Protective</span>&nbsp;<span
+                            class="badge">Fast</span>&nbsp;<span class="badge">Cool</span><br>
+                        <div class="containerG"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://www.k9web.com/wp-content/uploads/2022/03/rottweiler-puppy.jpg "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Rottweiler</h5>
+                        <p>Age: 4 month</p><span class="badge">Playful</span>&nbsp;<span
+                            class="badge">Fast</span>&nbsp;<span class="badge">Athletic</span><br>
+                        <div class="containerG"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://www.rover.com/blog/wp-content/uploads/2020/06/German-Shepherd-1-1024x683.jpg "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>German Shepherd</h5>
+                        <p>Age: 9 month</p><span class="badge">Playful</span>&nbsp;<span
+                            class="badge">Protective</span>&nbsp;<span class="badge">Sleeps</span><br>
+                        <div class="containerI"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://s36700.pcdn.co/wp-content/uploads/2015/05/shutterstock_219143260.jpg.optimal.jpg "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Rottweiler</h5>
+                        <p>Age: 1 year</p><span class="badge">Caring</span>&nbsp;<span class="badge">Cool with
+                            kids</span>&nbsp;<span class="badge">Protective</span><br>
+                        <div class="containerG"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/20110425_German_Shepherd_Dog_8505.jpg/2560px-20110425_German_Shepherd_Dog_8505.jpg "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>German Shepherd</h5>
+                        <p>Age: 1 year</p><span class="badge">Protective</span>&nbsp;<span
+                            class="badge">Loving</span>&nbsp;<span class="badge">Cuddles</span><br>
+                        <div class="containerI"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://media-be.chewy.com/wp-content/uploads/2021/04/16140525/Beagle_Featured-Image-1024x615.jpg "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Beagle</h5>
+                        <p>Age: 10 month</p><span class="badge">Cuteness overloaded</span>&nbsp;<span
+                            class="badge">Playful</span>&nbsp;<span class="badge">Cuddling</span><br>
+                        <div class="containerB"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://www.rover.com/blog/wp-content/uploads/2019/07/maltese-puppy-960x540.jpg "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Maltese</h5>
+                        <p>Age: 4 month</p><span class="badge">Cuddling</span>&nbsp;<span
+                            class="badge">Playful</span>&nbsp;<span class="badge">Cuteness overloaded</span><br>
+                        <div class="containerD"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIZBEAz6PBlVbm1h_4g_ObSMBEf-dzijYVmg&usqp=CAU "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Maltese</h5>
+                        <p>Age: 3 month</p><span class="badge">Cuddling</span>&nbsp;<span class="badge">Cuteness
+                            overloaded</span>&nbsp;<span class="badge">Playful</span><br>
+                        <div class="containerD"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2021%2F05%2F04%2Fmaltese-brush-528586694-2000.jpg "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Maltese</h5>
+                        <p>Age: 5 month</p><span class="badge">Gentle</span>&nbsp;<span
+                            class="badge">Playful</span>&nbsp;<span class="badge">Sleepy</span><br>
+                        <div class="containerD"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://www.rover.com/blog/wp-content/uploads/2019/11/schafer-dog-4357790_1920.jpg "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>German Shepherd</h5>
+                        <p>Age: 1 year</p><span class="badge">Protective</span>&nbsp;<span
+                            class="badge">Loving</span>&nbsp;<span class="badge">Cuddles</span><br>
+                        <div class="containerI"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://www.rover.com/blog/wp-content/uploads/2019/11/schafer-dog-4357790_1920.jpg "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>German Shepherd</h5>
+                        <p>Age: 1 year</p><span class="badge">Protective</span>&nbsp;<span
+                            class="badge">Loving</span>&nbsp;<span class="badge">Cuddles</span><br>
+                        <div class="containerI"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://www.akc.org/wp-content/uploads/2017/11/Pomeranian-puppies-sitting-on-a-white-background.jpg "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Pomeranian</h5>
+                        <p>Age: 2 month</p><span class="badge">Gentle</span>&nbsp;<span
+                            class="badge">Playful</span>&nbsp;<span class="badge">Loving</span><br>
+                        <div class="containerC"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://media-be.chewy.com/wp-content/uploads/2021/06/02102132/Pomeranian_Featured-Image.jpg "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Pomeranian</h5>
+                        <p>Age: 5 month</p><span class="badge">Gentle</span>&nbsp;<span
+                            class="badge">Playful</span>&nbsp;<span class="badge">Loving</span><br>
+                        <div class="containerC"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://cdn.shopify.com/s/files/1/0284/2391/3547/articles/American-Pitbull-Puppies-6.JPG_c4357295-9ee4-45f8-9718-e36c98022c46.jpg?v=1603063314"
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Pitbull</h5>
+                        <p>Age: 3 month</p><span class="badge">Protective</span>&nbsp;<span
+                            class="badge">Playful</span>&nbsp;<span class="badge">Caring</span><br>
+                        <div class="containerA"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://assets.orvis.com/is/image/orvisprd/AdobeStock_25245434 " class="d-block"
+                            alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Beagle</h5>
+                        <p>Age: 7 month</p><span class="badge">Cuddling</span>&nbsp;<span
+                            class="badge">Playful</span>&nbsp;<span class="badge">Cuteness overloaded</span><br>
+                        <div class="containerB"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://www.thesprucepets.com/thmb/iLznfgKknFVhC64iqP3WhVl2tzs=/4367x2911/filters:fill(auto,1)/beagle-RolfKopfle-Photolibrary-Getty-135631212-56a26b1d3df78cf772756667.jpg "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Beagle</h5>
+                        <p>Age: 11 month</p><span class="badge">Playful</span>&nbsp;<span
+                            class="badge">Gentle</span>&nbsp;<span class="badge">Sleepy</span><br>
+                        <div class="containerB"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card_image">
+                        <img src="https://images.saymedia-content.com/.image/t_share/MTgyNzMxMzAzNzI3MTQ2NDAz/pros-and-cons-of-owning-a-pomeranian.jpg "
+                            class="d-block" alt="... "></div>
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Pomeranian</h5>
+                        <p>Age: 7 month</p><span class="badge">Gentle</span>&nbsp;<span
+                            class="badge">Playful</span>&nbsp;<span class="badge">Loving</span><br>
+                        <div class="containerC"><i onClick="toggle()" id="btn" class="far fa-heart"></i></div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-0" data-bs-slide="prev">
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-0" data-bs-slide="next">
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!---Chat Box--->
+    <button class="open-button" onclick="openForm()"><i class="fa-brands fa-rocketchat"></i> Chat</button>
+
+    <div class="chat-popup" id="myForm">
+        <form action=" " class="form-container">
+            <h6>Looking to strike up a conversation?</h6>
+
+            <label for="msg "><b>
+                    <h4>Message <img class="emoji "
+                            src="https://iconarchive.com/download/i58928/wwalczyszyn/android-style-honeycomb/Messages.ico "
+                            alt="... " id="emojii" /></h4>
+                </b></label>
+            <textarea placeholder="Type your message.. " name="msg " required></textarea>
+
+            <button type="submit" class="btn " onclick="sendForm()">
+                <h5>Send <img src="https://icon-library.com/images/email-send-icon/email-send-icon-23.jpg " alt="... "
+                        id="emoji" /></h5>
+            </button>
+            <button type="button" class="btn cancel " onclick="closeForm()">
+                <h5>Close <img src="https://cdn3.iconfinder.com/data/icons/pyconic-icons-1-2/512/close-512.png "
+                        alt="... " id="emojii" /></h5>
+            </button>
+        </form>
+    </div>
+
+    <!---Footer--->
+    <section class="footer ">
+        <div class="box-container ">
+            <div class="box ">
+                <h4>
+                    <img class="emoji " alt="my img "
+                        src="https://clipart.world/wp-content/uploads/2020/11/Two-Paw-Print-clipart-transparent.png "
+                        id="brand"> PAWnder
+                </h4>
+                <h6>
+                    Find the perfect PAWer for your loving pet to fulfill the gap in their lives and find new buddy to
+                    complete your life too...
+                    <img class="emoji " src="https://upload.wikimedia.org/wikipedia/commons/5/50/Smile_Image.png "
+                        alt="smile " height="20 " width="20 " />
+                </h6>
+            </div>
+        </div>
+        <hr>
+        <div class=" footer-heart">
+            <b>Made with</b>
+            <g-emoji class="g-emoji " alias="heart "
+                fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png ">
+                <img class="emoji " alt="heart " height="20 " width="20 "
+                    src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png " /></g-emoji> <b>by</b>
+            <a href="https://www.linkedin.com/in/mridul-sharma-697961232 " target="_blank "><b>Mridul Sharma</b></a>
+        </div>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous ">
+    </script>
+    <!---JS--->
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
